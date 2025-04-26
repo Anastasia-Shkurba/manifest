@@ -234,12 +234,12 @@ body {
   margin-left: 20px;
 }
 
-.news__posts {
+.posts {
   display: flex;
   gap: 30px;
 }
 
-.news__post-img {
+.post-img {
   display: block;
 }
 
@@ -264,4 +264,39 @@ body {
 
 .news__post-text {
   margin: 0;
+}
+
+.popular__heading {
+  margin: 90px 0 50px;
+}
+
+.popular__post-title {
+  margin: 20px 0;
+}
+
+.popular__post-text {
+  margin: 20px 0 0;
+}
+
+.popular__btn {
+  display: block;
+  margin: 50px auto 90px;
+  width: max-content;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26.56px;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #565656;
+  padding: 9px 44px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.popular__btn:hover {
+  border: 1px solid #565656;
+  background-color: #FFFFFF;
+  color: #565656;
 }
