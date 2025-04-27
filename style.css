@@ -300,3 +300,121 @@ body {
   background-color: #FFFFFF;
   color: #565656;
 }
+
+.info {
+  margin-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.info__link {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 38.18px;
+  letter-spacing: 2.3px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.info__link::after {
+  content: "→";
+  display: block;
+  line-height: 0;
+  margin-top: 20px;
+}
+
+.info__text {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.info__paragraph {
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 32px;
+  letter-spacing: 0.95px;
+  color: #565656;
+}
+
+.footer {
+  background-color: #F4F4F4;
+  padding: 0 0 30px;
+}
+
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__contact-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 2.4px;
+  margin: 70px 0 30px;
+}
+
+.footer__contact-link {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26.56px;
+  letter-spacing: 1.6px;
+  text-decoration: none;
+  color: #000000;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.footer__contact-link:first-of-type {
+  margin-bottom: 15px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 23px;
+  transform: translateY(50%);
+}
+
+.footer__soc-container {
+  width: 50px;
+  aspect-ratio: 1/1;
+  border: 1px solid #565656;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer__soc-container:hover {
+  background-color: #565656;
+}
+
+.footer__soc-container:hover .footer__social {
+  fill: #FFFFFF;
+}
+
+.footer__social {
+  display: block;
+  width: 49%;
+  height: 49%;
+  fill: #565656;
+}
+
+.footer__copyright {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 19.92px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  margin: 0;
+}
