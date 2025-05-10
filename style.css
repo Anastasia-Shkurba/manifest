@@ -63,8 +63,56 @@ body {
   transition: all 0.3s ease;
 }
 
+.header__icons {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
 .header__menu-search {
   cursor: pointer;
+  display: block;
+}
+
+.header__burger-btn {
+  display: none;
+  position: relative;
+  width: 34px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header__burger-btn span {
+  position: absolute;
+  width: 34px;
+  height: 2px;
+  background-color: #000;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.header__burger-btn span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.header__burger-btn span:nth-child(3) {
+  transform: translateY(10px);
+}
+
+.header.open .header__burger-btn span:nth-child(1) {
+  transform: translateY(0) rotate(45deg);
+  border-radius: 1px;
+}
+
+.header.open .header__burger-btn span:nth-child(2) {
+  opacity: 0;
+}
+
+.header.open .header__burger-btn span:nth-child(3) {
+  transform: translateY(0) rotate(-45deg);
+  border-radius: 1px;
 }
 
 .hero {
@@ -417,4 +465,91 @@ body {
   letter-spacing: 1.2px;
   text-align: center;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .header__burger-btn {
+    display: block;
+  }
+
+  .header__menu-list {
+    position: absolute;
+    z-index: 100;
+    display: block;
+    box-sizing: border-box;
+    top: 11.5%;
+    left: -300px;
+    width: 300px;
+    background-color: #D5EEEB;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+    padding: 60px 10px 60px 30px;
+    transition: transform 0.5s ease;
+  }
+
+  .header__menu-link {
+    font-size: 17px;
+    color: #000;
+    display: block;
+    padding: 10px 0;
+  }
+
+  .header.open .header__menu-list {
+    transform: translateX(100%);
+  }
+
+  .header {
+    padding: 22.5px 0;
+  }
+
+  .header__logo-img {
+    width: 145px;
+    height: 13px;
+  }
+
+  .header__menu-search {
+    width: 20px;
+    aspect-ratio: 1/1;
+  }
+
+  /* HERO */
+  .hero {
+  height: 320px;
+  }
+
+  .hero__title {
+  font-size: 36px;
+  line-height: 50px;
+  letter-spacing: 1.8px;
+  top: 30px;
+}
+
+/* BLOG */
+.blog__title {
+  margin: 70px 0 0;
+}
+
+.blog__article {
+  gap: 20px;
+}
+
+.blog__article-img {
+  width: 340px;
+  height: 280px;
+}
+
+.blog__article-title {
+  margin: 0 0 20px;
+}
+
+.blog__article-link {
+  margin-bottom: 10px;
+}
+
+.blog__article-date {
+  margin-bottom: 23px;
+}
 }
