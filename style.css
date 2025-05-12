@@ -537,8 +537,8 @@ body {
 }
 
 .blog__article-img {
-  width: 340px;
-  height: 280px;
+  max-width: 340px;
+  height: auto;
 }
 
 .blog__article-title {
@@ -551,5 +551,146 @@ body {
 
 .blog__article-date {
   margin-bottom: 23px;
+}
+
+/* NEWS */
+.news__heading {
+  margin: 70px 0 50px;
+}
+
+.news__posts {
+  display: flex;
+  flex-direction: column;
+}
+
+.news__post {
+  display: flex;
+  gap: 20px;
+}
+
+.news__post:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.news__post-img {
+  max-width: 340px;
+  min-height: 240px;
+}
+
+.news__article-desc {
+  margin: 0 0 25px;
+}
+
+/* POPULAR*/
+.popular__heading {
+  margin: 70px 0 50px;
+}
+
+.popular__posts {
+  gap: 20px;
+}
+
+.popular__post-img {
+  max-width: 340px;
+  min-height: 160px;
+}
+
+.popular__btn {
+  margin: 50px auto 70px;
+}
+
+/* INFO */
+.info {
+  margin-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.info__text {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  text-align: end;
+  gap: 32px;
+}
+
+/* FOOTER */
+.footer__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+}
+
+.footer__contact-title {
+  margin: 50px 0 20px;
+}
+
+.footer__socials {
+  transform: none;
+}
+
+.footer__copyright {
+  margin: 40px 0 0;
+}
+}
+
+@media (max-width: 400px) {
+.container {
+  max-width: 300px;
+  }
+
+  .header__icons {
+    gap: 20px;
+  }
+
+  /* HERO */
+.article-heading {
+  flex-direction: column;
+  gap: 10px;
+  align-items: start;
+  }
+
+.hero {
+    height: 500px;
+  }
+
+.hero__title {
+  font-size: 30px;
+  line-height: 50px;
+  letter-spacing: 1.5px;
+  top: 70px;
+  left: 10px;
+  max-width: 300px;
+}
+
+.blog__article {
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+.blog__article--reverse {
+  flex-direction: column;
+}
+
+.news__post {
+  flex-direction: column;
+  gap: 25px;
+}
+
+.news__post:nth-child(2) {
+  flex-direction: column;
+}
+
+.popular__posts {
+  gap: 25px;
+  flex-direction: column;
+}
+
+.popular__post-img {
+  max-width: 300px;
+  min-height: 150px;
 }
 }
