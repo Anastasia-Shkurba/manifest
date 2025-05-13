@@ -666,6 +666,7 @@ body {
   max-width: 300px;
 }
 
+/* BLOG */
 .blog__article {
   flex-direction: column-reverse;
   gap: 30px;
@@ -673,6 +674,11 @@ body {
 
 .blog__article--reverse {
   flex-direction: column;
+}
+
+/* NEWS */
+.news__heading {
+  margin: 70px 0 30px;
 }
 
 .news__post {
@@ -684,6 +690,15 @@ body {
   flex-direction: column;
 }
 
+.posts {
+  gap: 50px;
+}
+
+/* POPULAR */
+.popular__heading {
+  margin: 70px 0 30px;
+}
+
 .popular__posts {
   gap: 25px;
   flex-direction: column;
@@ -692,5 +707,48 @@ body {
 .popular__post-img {
   max-width: 300px;
   min-height: 150px;
+}
+
+.popular__post-link {
+  display: block;
+  max-width: 295px;
+}
+
+.popular__post-text::after {
+  content: 'UI has to make a huge visual difference between warning, an alert and a success';
+  display: block;
+  margin: 15px 0 0;
+}
+
+/* INFO */
+.info {
+  gap: 50px;
+}
+
+.info__text {
+  text-align: left;
+}
+
+/* FOOTER */
+.footer__contact-title {
+  font-size: 32px;
+  letter-spacing: 1.6px;
+}
+
+.footer__contact-link {
+  font-size: 18px;
+  line-height: 29.88px;
+  letter-spacing: 1.8px;
+  margin-bottom: 15px;
+}
+
+.footer__content {
+  gap: 40px;
+}
+
+.footer__copyright {
+  font-size: 16px;
+  line-height: 26.56px;
+  letter-spacing: 1.6px;
 }
 }
